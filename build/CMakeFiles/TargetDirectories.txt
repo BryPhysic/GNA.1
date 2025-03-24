@@ -1,0 +1,3 @@
+/Users/bryphy/Desktop/GNA.1/build/CMakeFiles/MyGNPsim.dir
+/Users/bryphy/Desktop/GNA.1/build/CMakeFiles/edit_cache.dir
+/Users/bryphy/Desktop/GNA.1/build/CMakeFiles/rebuild_cache.dir
