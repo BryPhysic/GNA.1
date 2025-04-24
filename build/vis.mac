@@ -1,14 +1,14 @@
-/vis/open OGLIQt
+/vis/open OGL
 /vis/scene/create
 /vis/scene/add/volume
 /vis/sceneHandler/attach
 
 # Transparencia del agua
-/vis/geometry/set/visibility Water true
+/vis/geometry/set/visibility Water 1
 /vis/geometry/set/colour Water 0 0 1 0.2
 
 # GNP dorado y visible dentro del agua
-/vis/geometry/set/visibility GNP true
+/vis/geometry/set/visibility GNP 1
 /vis/geometry/set/colour GNP 1 0.84 0 1.0
 
 /vis/viewer/set/style surface

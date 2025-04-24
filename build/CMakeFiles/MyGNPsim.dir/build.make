@@ -155,11 +155,11 @@ MyGNPsim: /usr/local/lib/libG4particles.dylib
 MyGNPsim: /usr/local/lib/libG4geometry.dylib
 MyGNPsim: /usr/local/lib/libG4materials.dylib
 MyGNPsim: /usr/local/lib/libG4graphics_reps.dylib
-MyGNPsim: /opt/homebrew/Cellar/qt@5/5.15.16/lib/QtWidgets.framework/QtWidgets
-MyGNPsim: /opt/homebrew/Cellar/qt@5/5.15.16/lib/QtGui.framework/QtGui
-MyGNPsim: /opt/homebrew/Cellar/qt@5/5.15.16/lib/QtCore.framework/QtCore
+MyGNPsim: /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/QtWidgets
+MyGNPsim: /opt/homebrew/opt/qt@5/lib/QtGui.framework/QtGui
+MyGNPsim: /opt/homebrew/opt/qt@5/lib/QtCore.framework/QtCore
 MyGNPsim: /usr/local/lib/libG4analysis.dylib
-MyGNPsim: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/libexpat.tbd
+MyGNPsim: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/lib/libexpat.tbd
 MyGNPsim: /usr/local/lib/libG4zlib.dylib
 MyGNPsim: /usr/local/lib/libG4intercoms.dylib
 MyGNPsim: /usr/local/lib/libG4global.dylib

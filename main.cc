@@ -8,12 +8,6 @@
 #include "G4UIExecutive.hh"
 
 int main(int argc, char** argv) {
-    // Modo interactivo si no se pasa macro por línea de comandos
-    G4UIExecutive* ui = nullptr;
-    if (argc == 1) {
-        ui = new G4UIExecutive(argc, argv);
-    }
-
     // Run manager
     auto* runManager = new G4RunManager();
 
@@ -23,20 +17,20 @@ int main(int argc, char** argv) {
     // ✅ Lista de física (FTFP_BERT es completa y robusta)
     runManager->SetUserInitialization(new FTFP_BERT());
 
-    // (Opcional: Generator de partículas - pendiente)
+    // Inicializar todo
+    runManager->Initialize();
 
     // Visualización
     G4VisManager* visManager = new G4VisExecutive();
     visManager->Initialize();
 
-    // Inicializar todo
-    runManager->Initialize();
-
-    // Comandos
+    // Interfaz de usuario
     G4UImanager* UImanager = G4UImanager::GetUIpointer();
+    G4UIExecutive* ui = nullptr;
 
-    if (ui) {
-        UImanager->ApplyCommand("/control/execute ../vis.mac");  // Macro de visualización
+    if (argc == 1) {
+        ui = new G4UIExecutive(argc, argv, "Qt");
+        UImanager->ApplyCommand("/control/execute vis.mac");
         ui->SessionStart();
         delete ui;
     } else {
